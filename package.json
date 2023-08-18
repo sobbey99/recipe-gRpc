@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-recipe-ms": "node ./recipe-ms/main.js",
+    "start-processor-ms": "node ./processor-ms/main.js",
+    "start": "concurrently 'npm run start-recipe-ms' 'npm run start-processor-ms'"
   },
   "keywords": [],
   "author": "",
